@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Cinzel+Decorative|Monoton|Playfair+Display|Sacramento');
+/*font-family: 'Playfair Display', serif;*/
+/*font-family: 'Cinzel', serif;*/
+/*font-family: 'Sacramento', cursive;*/
+/*font-family: 'Monoton', cursive;*/
+/*font-family: 'Cinzel Decorative', cursive;*/
+
+body{
+    background-color: black;
+}
+.body{
+    background-color: black;
+    overflow: hidden;
+    height: 100%;
+}
+.moon1{
+    width: 120px;
+    height: 120px;
+    background-color: cadetblue;
+    -moz-border-radius: 60px;
+    -webkit-border-radius: 60px;
+    border-radius: 60px;
+    position: fixed;
+    top:350px;
+    left: 642px;
+    transition: background-color 0.3s ease-in;
+}
+
+.moon1:hover{
+    background-color: aquamarine;
+}
+.moon2{
+    width: 116px;
+    height: 116px;
+    background-color:black;
+    -moz-border-radius: 58px;
+    -webkit-border-radius: 58px;
+    border-radius: 58px;
+    position: absolute;
+    top:351px;
+    left: 640px;
+    transition: background-color 0.3s ease-in;
+
+}
+
+
+.rectangletop{
+    width: 5000px;
+    background-color: black;
+    height: 100px;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+.rectangleunder{
+    width: 5000px;
+    background-color: black;
+    height: 100px；
+    -webkit-overflow-scrolling: touch;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+.feb {
+    margin: auto;
+    position: fixed;
+    top: 0; left: 0; bottom: 0; right: 0;
+    width: 100%;
+
+    display: table;
+
+    color: orangered;
+    text-transform: uppercase;
+    text-align: center;
+
+    font-size: 1em;
+    font-family: 'Playfair Display', serif;
+
+    letter-spacing: 2em;
+    line-height: 1.2em;
+}
+.menu{
+    position: absolute;
+    left:1500px;
+    writing-mode: vertical-lr;
+    line-height:100px;
+    font-family: 'Playfair Display', serif;
+    color: cadetblue;
+}
+
+p{
+    transition: color 0.3s ease-in;
+}
+p:hover{
+    color: tomato;}
+
+#box1,#box2,#box3,#box4,#box5 {
+    padding-top:50px;
+    /*border:1px solid green;*/
+}

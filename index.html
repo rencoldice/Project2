@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--确保中文不乱码-->
+    <title>feb</title>
+    <link rel="stylesheet" href="style.css" media="screen" type="text/css" >
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Cinzel+Decorative|Monoton|Playfair+Display|Sacramento" rel="stylesheet">
+    <script type="text/javascript">
+        function openShutManager(oSourceObj,oTargetObj,shutAble,oOpenTip,oShutTip){
+            var sourceObj = typeof oSourceObj == "string" ? document.getElementById(oSourceObj) : oSourceObj;
+            var targetObj = typeof oTargetObj == "string" ? document.getElementById(oTargetObj) : oTargetObj;
+            var openTip = oOpenTip || "";
+            var shutTip = oShutTip || "";
+            if(targetObj.style.display!="none"){
+                if(shutAble) return;
+                targetObj.style.display="none";
+                if(openTip  &&  shutTip){
+                    sourceObj.innerHTML = shutTip;
+                }
+            } else {
+                targetObj.style.display="block";
+                if(openTip  &&  shutTip){
+                    sourceObj.innerHTML = openTip;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+  <div class="rectangletop"></div>
+  <div class="rectangleunder"></div>
+  <div class="moon1">腻</div>
+  <div class="moon2"></div>
+  <div class="body"></div>
+  <h1 class="feb">F  E  B</h1>
+    <div class="menu"></div>
+
+    <div class="menu">
+        <p><a class="intro" onclick="openShutManager(this,'box1',false)">·介绍 | INTRO</a></p>
+            <a id="box1" style="display:none">·这里是贰月制造所</a>
+        <p><a class="customize" onclick="openShutManager(this,'box2',false)">·定制 | CUSTOMIZE</a></p>
+            <a id="box2" style="display:none">·INQUIRE WITHIN</a>
+        <p><a class="customize" onclick="openShutManager(this,'box3',false)">·女士 | WOMEN</a></p>
+            <a id="box3" style="display:none">·钱夹 | WALLET<br>·手包 | PURSE<br>·提包 | BAGS</a>
+        <p><a class="customize" onclick="openShutManager(this,'box4',false)">·男士 | MEN</a></p>
+            <a id="box4" style="display:none">·公文 | BRIEFCASE<br>·手包 | HANDBAGS</a>
+        <p><a class="customize" onclick="openShutManager(this,'box5',false)">·其它 | OTHER</a></p>
+            <a id="box5" style="display:none">·配件 | ACCESSORY<br>·手账 | NOTEBOOK</a>
+    </div>
+
+</body>
+</html>
