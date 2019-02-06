@@ -6,12 +6,22 @@
 /*font-family: 'Cinzel Decorative', cursive;*/
 
 body{
-    background-color: black;
+    background-color: darkblue;
 }
 .body{
-    background-color: black;
+    background-color: darkblue;
     overflow: hidden;
     height: 100%;
+}
+.ni{
+    font-family: 'Monoton', cursive;
+    z-index: 2;
+    font-size: 1.5em;
+    color: darkblue;
+    position: fixed;
+    top:390px;
+    left: 690px;
+
 }
 .moon1{
     width: 120px;
@@ -24,6 +34,7 @@ body{
     top:350px;
     left: 642px;
     transition: background-color 0.3s ease-in;
+    z-index: 1;
 }
 
 .moon1:hover{
@@ -32,7 +43,7 @@ body{
 .moon2{
     width: 116px;
     height: 116px;
-    background-color:black;
+    background-color: darkblue;
     -moz-border-radius: 58px;
     -webkit-border-radius: 58px;
     border-radius: 58px;
@@ -40,13 +51,14 @@ body{
     top:351px;
     left: 640px;
     transition: background-color 0.3s ease-in;
+    z-index: 3;
 
 }
 
 
 .rectangletop{
     width: 5000px;
-    background-color: black;
+    background-color: darkblue;
     height: 100px;
     -webkit-overflow-scrolling: touch;
     overflow-x: scroll;
@@ -62,13 +74,13 @@ body{
 }
 .feb {
     margin: auto;
-    position: fixed;
+    position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
     width: 100%;
 
     display: table;
 
-    color: orangered;
+    color: crimson;
     text-transform: uppercase;
     text-align: center;
 
@@ -77,6 +89,7 @@ body{
 
     letter-spacing: 2em;
     line-height: 1.2em;
+    z-index: 4;
 }
 .menu{
     position: absolute;
@@ -91,7 +104,7 @@ p{
     transition: color 0.3s ease-in;
 }
 p:hover{
-    color: tomato;}
+    color: crimson;}
 
 #box1,#box2,#box3,#box4,#box5 {
     padding-top:50px;
